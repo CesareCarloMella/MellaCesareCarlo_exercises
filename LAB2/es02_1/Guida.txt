@@ -1,0 +1,4 @@
+GUIDA PER L'ESECUZIONE DEL CODICE PER es02_1
+I parametri in ingresso sono contenuti nel file ------> "Parameters.dat"
+	1      Numero di steps Monte Carlo
+	2      Numero di blocchi

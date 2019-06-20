@@ -1,0 +1,11 @@
+0.364
+164
+83.787
+100
+100
+
+	sigma  (nm)
+	Tcaratteristica  (K)
+	massa  (amu)
+	numero di blocchi. Attenzione! deve essere lo stesso dei dati di input della simulazione in unità di LJ.
+	nbins.

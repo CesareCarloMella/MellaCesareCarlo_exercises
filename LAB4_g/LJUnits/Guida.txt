@@ -1,0 +1,28 @@
+GUIDA ALL'ESECUZIONE DEI CODICI PER IL LAB4
+
+
+----Cartella LJUnits:
+	Contiene il codice principale. Utilizza una classe, "MolDyn", copiata in nelle cartelle necessarie. 
+	Il comando ---> "make clean"    NON CANCELLA I DATI, CANCELLA SOLO LE CONFIGURAZIONI FINALI. PER CANCELLARE I DATI USARE  ----> "clean.sh"
+
+
+----Cartella MolDynCLASS:
+	Contiene solo i file relativi alla classe.
+	
+	
+----Cartella SpecificMolecule:
+	Contiene il codice per la trasformazione dei risultati in unità del sistema internazionale. E' molto generale:
+	Il file Parameters.dat non è vincolato ai due gas dell'esercizio. 
+	Nella cartella DataInput è necessario copiare i risultati ottenuti dal codice in LJUnits e che si vogliono convertire. I dati convertiti vengono inseriti in DataOutput. 
+	Le tre cartelle Gas, Liquid e Solid sono specifiche di questo esercizio. 
+	In generale in codice di conversione funziona con i soli Parameter.dat, DataInput, DataOutput. 
+	
+	
+-----Cartella RisultatiNotebook: sono copiati i risultati per il notebook.
+	
+	
+	
+	
+	
+
+	

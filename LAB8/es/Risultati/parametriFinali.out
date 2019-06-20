@@ -1,0 +1,20 @@
+0
+2
+100000
+100
+-3
+3
+800
+0.79
+0.615
+
+
+	posizione di partenza (x_start)
+	delta
+	numero punti totale
+	numero blocchi
+	estremo inferiore per istrogramma
+	estremo superiore
+	numero dei bin
+	parametro mu ottimizzato
+	parametro sigma ottimizzato

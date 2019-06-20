@@ -1,0 +1,16 @@
+0.340
+120
+39.948
+0.364
+164
+83.787
+100
+
+
+	sigma Argon (nm)
+	Tcaratteristica Argon (K)
+	massa Argon (amu)
+	sigma kripton (nm)
+	Tcaratteristica Kripton (K)
+	massa Kripton (amu)
+	numero di blocchi. Attenzione! deve essere lo stesso dei dati di input della simulazione in unità di LJ.

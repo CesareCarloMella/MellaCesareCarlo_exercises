@@ -1,0 +1,13 @@
+GUIDA ALL'ESECUZIONE DEL CODICE PER LA STIMA DI PI-GRECO.
+
+Nel file ----->   "Parameters.dat" si trovano 6 numeri. Sono i parametri in ingresso per la simulazione. Nell'ordine, sono:
+	1   lunghezza ago;
+	2   distanza righe;
+	3   lunghezza piano;
+	4   numero totale di step montecarlo, ovvero di stime di pi;
+	5   numero di blocchi in cui dividere il dato 4;
+	6   numero di punti da usare per una singola stima di pi;
+	
+	
+	
+	

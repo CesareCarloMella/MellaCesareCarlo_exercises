@@ -1,0 +1,14 @@
+1
+30
+100
+1000
+
+
+
+		dataIn >> configurazione. Se (0) sulla circonferenza, se (1) dentro il quadrato
+		dataIn >> numeroCittà
+		dataIn >> temperatura iniziale
+		dataIn >> Numero di mosse per step di temperatura
+
+		
+		

@@ -1,0 +1,13 @@
+1
+30
+200
+0.001
+0.01
+
+
+
+		dataIn >> configurazione. Se (0) sulla circonferenza, se (1) dentro il quadrato
+		dataIn >> numeroCittà
+		dataIn >> numero di generazioni
+		dataIn >> probabilità di una mutazione
+		dataIn >> probabilità di un crossover

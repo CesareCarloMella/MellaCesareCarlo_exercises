@@ -1,0 +1,21 @@
+GUIDA PER L'ESECUZIONE DEL PROGRAMMA PER IL TEST DEL GENERATORE PSEUDO-RANDOM.
+Il file ----->  "Parameters.dat" contiene 2 numeri. 
+	1 Numero totale di lanci;
+	2 Numero di blocchi in cui si vuole suddividere 1. Si scelga 1 multiplo di 2.
+	
+	
+	
+L'escercizio è stato diviso in due parti, stima delle medie (codice contenuto in es01_1.cpp) e test del chi quadro (codice in ChiTest.cpp).
+
+
+	
+I risultati sono salvati in tre file:
+-----> "RandomData.dat" e "SigmaData.dat" contengono i risultati relativi alla stima delle due medie, ordinati in tre colonne: 
+	
+	Indice di blocco(= #numero di blocchi considerati)		Valore stimato		Incertezza stimata
+	
+	
+-----> "ChiData.dat" contiene in unica colonna i risultati del test del chi quadro.
+
+
+

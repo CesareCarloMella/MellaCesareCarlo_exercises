@@ -1,0 +1,11 @@
+Guida per l'esecuzione del programma es02_2
+
+Il file --------->"Parameters.dat" contiene 4 dati
+
+		1    Numero di passi
+		2    Numero di simulazioni per passo
+		3    Lunghezza del passo
+		4    Numero di blocchi
+		
+		
+		

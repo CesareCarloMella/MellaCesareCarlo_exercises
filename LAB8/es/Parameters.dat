@@ -1,0 +1,16 @@
+0.0
+2
+100000
+100
+-3.0
+3.0
+800
+
+
+	x iniziale
+	delta iniziale
+	numero di lanci
+	numero di blocchi
+	x_min_istogramma
+	x_max_istogramma
+	numero di bin

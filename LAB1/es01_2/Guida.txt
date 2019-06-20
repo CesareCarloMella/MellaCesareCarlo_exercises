@@ -1,0 +1,12 @@
+GUIDA PER L'ESECUZIONE DEI PROGRAMMI es01_2*  					*=qualunquecosa
+
+Nei file -----> "Parametri/DataIn*.dat" sono contenuti i parametri in ingresso. Per ogni distribuzione devono essere eseguiti 4 istogrammi/grafici. Nei file si trovano 
+			      due dati per ogni grafico:
+			      1  numero di bin in cui suddividere l'asse x
+			      2  range del grafico (asse x)
+				
+			      Tutti i parametri sono trasportati nel modo corretto per poter eseguire il grafico sul Jupyter-Notebook, dunque bisogna formattare nulla
+				
+Per ogni simulazione i risultati vengono salvati in file -----> "*Data*.dat"
+
+Per semplicità di esecuzione il Makefile è stato costruito aggiungendo due comandi per compilare "compila" ed eseguire "esegui" i tre programmi in una volta sola.

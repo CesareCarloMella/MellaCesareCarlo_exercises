@@ -1,0 +1,13 @@
+GUIDA PER L'ESECUZIONE DEL PROGRAMMA es03_1
+
+Il file  ------>   Parameters.dat         contiene i parametri in ingresso alla simulazione.
+	
+			1	PREZZO INIZIALE
+			2	PREZZO CONCORDATO
+			3	TEMPO FINALE
+			4	FLUTTUAZIONI
+			5	RATE
+			6	NUMERO DI SIMULAZIONI
+			7	NUMERO DI PASSI PER IL CASO A TEMPO DISCRETO
+			8	NUMERO DI BLOCCHI
+
