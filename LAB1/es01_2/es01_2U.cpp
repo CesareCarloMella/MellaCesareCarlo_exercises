@@ -57,8 +57,8 @@ int main() {
    ofstream outputU4("Risultati/UniformData100.dat");
    
    for(int i=0; i<4; i++) {
-   	read>>bin;
-   	read>>range;
+   	read>>bin;		//sono stati scelti per migliorare l'incasellamento...eseguendo per un po' e tentando
+   	read>>range;		//idem
    	w=range/bin;	
    	if(uniform!=NULL) {
    		delete []uniform;

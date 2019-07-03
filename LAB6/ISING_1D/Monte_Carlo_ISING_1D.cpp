@@ -23,15 +23,18 @@ int main()
 { 
     Input(); //Inizialization	
     //EQUILIBRAZIONE.
-    for(int i=1; i <=10; ++i) {	//30 blocchi per l'quilibrazione.
+    ofstream equilibration("Equilibration/InternalEnergy.dat");
+    for(int i=1; i <=10; ++i) {	//blocchi per l'quilibrazione.
 	Reset(i);
-	for(int j=1; j<10000; j++) {	//blocchi da 40 move.
+	for(int j=1; j<100; j++) {	//blocchi da jmax move.
 		Move(metro);
 		Measure();
 		Accumulate();
+		equilibration<<(i-1)*100+j<<"   "<<walker[iu]/double(nspin)<<endl;	
 	}
 	Averages(i);
     }
+    equilibration.close();
     
     cout<<endl<<"Finished the equibration run"<<endl<<endl<<endl;
     //SIMULAZIONE.

@@ -107,6 +107,7 @@ int main() {
 	ofstream OttimData("Risultati/Ottimizzazione.dat");
 	for(sigma=0.55; sigma<=0.7; sigma+=0.005) {	//griglia in sigma
     		for(mu=0.7; mu<=0.9; mu+=0.005) {	//griglia in mu
+    			//stima dell'energia
     			E=0.;
     			x=x_start;			//riparto sempre dall'inizio
     			for(int i=0; i<M; i++) {	
@@ -120,7 +121,8 @@ int main() {
                       	}
                       	E/=(double)M;	//quanto vale l'energia?
                       	OttimData<<mu<<"   "<<sigma<<"   "<<E<<endl;
-                     
+                     	//fine stima, energia stampata
+                     	//algoritmo per minimizzare
                       	if(sigma==0.5 and mu==0.1) {	//se è il primo tentativo imposto i valori...
                       		E_min=E;
                       		sigma_min=sigma;
@@ -168,17 +170,17 @@ int main() {
         int which_bin;
         for(int i=0; i<N; i++) {
                 for(int j=L*i; j<L*(i+1); j++) {
-                        incr=T_Random(rnd,delta);
-                        f=x+incr;
-                        prob1=Double_Gauss(x, mu_min, sigma_min);
-                        prob2=Double_Gauss(f, mu_min, sigma_min);
-                        prob=min(1.,prob2/prob1);
-                        A_AccRej(rnd, prob, &x,&incr, &lanci, &accettati);
+                        incr=T_Random(rnd,delta);		//genera proposta
+                        f=x+incr;				//	""	""
+                        prob1=Double_Gauss(x, mu_min, sigma_min);	//calcola le probabilità
+                        prob2=Double_Gauss(f, mu_min, sigma_min);	//	""	""
+                        prob=min(1.,prob2/prob1);			//probabilità di accettazione
+                        A_AccRej(rnd, prob, &x,&incr, &lanci, &accettati);		//accetto??
                         if(x>=x_min and x<=x_max) {
 	                        which_bin=int((x-x_min)/bin_size);	//aggiorno l'istogramma
         	                occupazione[which_bin]+=1.;
         	        }
-                        prog[i]+=Integrand(x, mu_min, sigma_min);
+                        prog[i]+=Integrand(x, mu_min, sigma_min);		//valuta energia
                 }
                 prog[i]/=L;	          	//media su un blocco
                 prog2[i]=prog[i]*prog[i];       //quadrato della media su un blocco 

@@ -52,7 +52,7 @@ int main() {
 	
 
 	//INITIAL CONFIGURATION
-	if( WhichConfig==0 ) {				//CIRCONFERENZA
+	if( WhichConfig==0 ) {							//CIRCONFERENZA
 		L_Mean.open("Risultati/circonferenza/lunghezzeMedie.dat");
 		L_Best.open("Risultati/circonferenza/lunghezzeBest.dat");
 		finalConfig.open("Risultati/circonferenza/sequenza.dat"); 		
@@ -76,7 +76,7 @@ int main() {
 
 	}
 	
-	if( WhichConfig==1 ) {				//QUADRATO
+	if( WhichConfig==1 ) {							//QUADRATO
 		L_Mean.open("Risultati/quadrato/lunghezzeMedie.dat");
 		L_Best.open("Risultati/quadrato/lunghezzeBest.dat");
 		finalConfig.open("Risultati/quadrato/sequenza.dat"); 		

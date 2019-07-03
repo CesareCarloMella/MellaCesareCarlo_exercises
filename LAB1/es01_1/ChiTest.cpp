@@ -51,11 +51,11 @@ int main() {
    	for(int j=0; j<n; j++) {
 		value=rnd.Rannyu();	//estrae un numero.
 		//which bins?
-		DataBin[int(value/w)]+=1.;
+		DataBin[int(value/w)]+=1.;	//lo incasella
 	}
 	for(int k=0; k<M; k++) {
-		sum+=pow(DataBin[k]-e,2);
-		DataBin[k]=0.;
+		sum+=(DataBin[k]-e)*(DataBin[k]-e);
+		DataBin[k]=0.;	//resetta per la simulazione successiva
 	}
 	ChiSquare[i]=sum/e;	
 	output<<ChiSquare[i]<<endl;
