@@ -69,10 +69,10 @@ int main() {
    	}
  	for(int j=0; j<M; j++) {
  		sum=0.;  
- 	   	for(int k=0; k<N[i]; k++) {
+ 	   	for(int k=0; k<N[i]; k++) {		//qua distingue
  	   	sum+=rnd.Exp(lambda);
    		}
-   		sum=sum/N[i];
+   		sum=sum/N[i];		//media
    		for(int b=0; b<bin; b++) {
    			markExp=(ExpAve-range/2.)+b*w;
    			if(sum>=(markExp-w/2.) and sum<(markExp+w/2.)) {

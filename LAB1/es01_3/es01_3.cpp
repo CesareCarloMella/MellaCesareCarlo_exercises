@@ -21,7 +21,7 @@ int main() {
 	input>>N;		//quinto dato file: numero di blocchi
 	input>>m;		//sesto dato file: numero di punti da usare per stima pi greco.
 	input.close();
-	int Lb=M/N;
+	int Lb=M/N;		//blocks length
 	Ago needle(L);				//crea oggetto Ago di lunghezza L
 	double *pi=new double[N];		//valore medio di pi in ogni blocco.
 	double *pi2=new double[N];		//valore medio di pi al quadrato.
@@ -31,7 +31,7 @@ int main() {
 	for(int i=0; i<N; i++) {
 		sum=0.;
 		for(int j=0; j<Lb; j++) {
-			sum+=needle.GetPi(m,d,w);
+			sum+=needle.GetPi(m,d,w);		//esegue una stima!!!
 		}
 		pi[i]=sum/(float)Lb;
 		pi2[i]=pi[i]*pi[i];
